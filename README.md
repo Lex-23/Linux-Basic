@@ -270,9 +270,13 @@ Systemd — подсистема инициализации и управлен�
 
 ***
 ## Полезные ссылки
-[Символические и жесткие ссылки в Linux](Символические и жесткие ссылки в Linux. Команда ln)
-
-
+[Файловая система Linux](https://serverspace.by/support/help/struktura-fajlovoj-sistemy-linux/)
+[Символические и жесткие ссылки в Linux](https://medium.com/@krisbredemeier/the-difference-between-hard-links-and-soft-or-symbolic-links-780149244f7d)
+[Пользователи, группы и права доступа в Linux](https://losst.ru/prava-dostupa-k-fajlam-v-linux)
+[команда sudo](https://ru.hexlet.io/courses/cli-basics/lessons/sudo/theory_unit)
+[команда chmod](https://losst.ru/komanda-chmod-linux)
+[команда chown](https://losst.ru/komanda-chown-linux)
+[systemd](https://ru.wikipedia.org/wiki/Systemd)
 
 
 
