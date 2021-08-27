@@ -129,6 +129,8 @@ ln -s /home/pingvinus/myfile.txt mylink
 ~~~
 ln myfile.txt hardlinktofile
 ~~~
+![image](https://wiki.merionet.ru/images/myagkie-i-zhestkie-ssylki-v-linux/3.png)
+пример, содержащий все виды ссылок
 ***
 ## Users & Groups
 Linux в целом и Ubuntu в частности - системы многопользовательские, т.е. на одном компьютере может быть несколько различных пользователей, каждый со своими собственными настройками, данными и правами доступа к различным системным функциям.  
