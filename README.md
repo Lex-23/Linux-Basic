@@ -291,6 +291,8 @@ Systemd — подсистема инициализации и управлен�
     systemd-analyze — анализ скорости запуска служб;
     systemd-boot — UEFI загрузчик(замена grub).
     
+unit для systemd:
+    
     [Unit]
     Description=MyUnit
     After=syslog.target
