@@ -290,6 +290,35 @@ Systemd — подсистема инициализации и управлен�
     journalctl — служба журналирования;
     systemd-analyze — анализ скорости запуска служб;
     systemd-boot — UEFI загрузчик(замена grub).
+    
+    [Unit]
+    Description=MyUnit
+    After=syslog.target
+    After=network.target
+    After=nginx.service
+    After=mysql.service
+    Requires=mysql.service
+    Wants=redis.service
+
+    [Service]
+    Type=forking
+    PIDFile=/work/www/myunit/shared/tmp/pids/service.pid
+    WorkingDirectory=/work/www/myunit/current
+
+    User=myunit
+    Group=myunit
+
+    Environment=RACK_ENV=production
+
+    OOMScoreAdjust=-1000
+
+    ExecStart=/usr/local/bin/bundle exec service -C /work/www/myunit/shared/config/service.rb --daemon
+    ExecStop=/usr/local/bin/bundle exec service -S /work/www/myunit/shared/tmp/pids/service.state stop
+    ExecReload=/usr/local/bin/bundle exec service -S /work/www/myunit/shared/tmp/pids/service.state restart
+    TimeoutSec=300
+
+    [Install]
+    WantedBy=multi-user.target 
 
 ***
 ## Полезные ссылки
