@@ -1,23 +1,5 @@
-# online-shop-devops
-
-# INSTRUCTIONS
-
-## 1. **AWS part**
-You must create next instances in **AWS**:
-- **RDS**
-- **EC2**
-- **Security groups** *(3 pcs)*
-- **S3** *(otional, will need in future, not now)*
-
-### Settings and minimal requirements for instances:
-- RDS: PostgreSQL 12.7-R1, db.t2.micro, `Storage type`: General Purpose SSD (gp2), `Allocated storage`: 20 GB
-- EC2: Amazon Linux 2 AMI (HVM), t2.micro, `SSD Volume Type`: ami-00dfe2c7ce89a450b (64-bit x86) / ami-031dea1a744251b51 (64-bit Arm)
-- Security groups:
-  1. **ec2_connect**: *In*(`Type`: HTTPS, `Protocol`: TCP, `Port range`: 443, `Source`: 0.0.0.0/0), *Out*(All traffic)
-  2. **ssh_connect**: *In*(`Type`: SSH, `Protocol`: TCP, `Port range`: 22, `Source`: My IP)
-  3. **rds_connect**: *In*(`Type`: PostgreSQL, `Protocol`: TCP, `Port range`: 5432, `Source`: ec2_connect), *Out*(All traffic)
-
-## 2. **Ansible deploy part**
+## 2. **SSO part**
+Contact to ![Andrei.Ihnatsenka](andrei.ihnatsenka@itechart-group.com), skype - iandrey.ignatenko
 
 # Linux-Basic
 **Linux**  — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты. Как и ядро Linux, системы на его основе, как правило, создаются и распространяются в соответствии с моделью разработки свободного и открытого программного обеспечения. Linux-системы распространяются в основном бесплатно в виде различных дистрибутивов — в форме, готовой для установки и удобной для сопровождения и обновлений, — и имеющих свой набор системных и прикладных компонентов, как свободных, так и проприетарных (собственнических).  
